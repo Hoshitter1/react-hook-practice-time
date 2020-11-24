@@ -8,7 +8,7 @@ function App() {
     const newTime = new Date().toLocaleTimeString("it-IT");
     setTime(newTime);
   }
-
+  setInterval(getCurrentTIme, 1000);
   return (
     <div className="container">
       <h1>{currentTime}</h1>
